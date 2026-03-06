@@ -25,10 +25,8 @@ int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
     for(int i = 0; i < 100000; i++) {
-
         benchmark_cache.put(i, i*10);
         benchmark_cache.get(i);
-
     }
 
     auto end = std::chrono::high_resolution_clock::now();
